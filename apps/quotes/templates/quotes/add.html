@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load staticfiles %}
+        <link href="{% static 'review/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <a href="/success">Dashboard</a> | <a href="/logout">Logout</a></p>
+        <h1>Posted by {{ user.first_name }}</h1>
+        <p>Count: 2</p>
+        <h3>{{quote.quoted_by}} {{quote.message}}</h3>
+    </body>
+</html>
